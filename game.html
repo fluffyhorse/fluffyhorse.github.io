@@ -1,0 +1,15 @@
+<html>
+  <script>
+  function add_wood(){
+    wood=wood+1;
+    inv.innerHTML="Дерево:"+ wood;
+  }
+  function start(){
+    wood=0;
+    document.write('<center><div id="inv">Дерево: 0</div><button onclick="add_wood();">Добыть дерево</button></center>');
+  }
+</script>
+<body>
+  <center>
+  <button onclick="start();">Старт</button>
+  </center>
