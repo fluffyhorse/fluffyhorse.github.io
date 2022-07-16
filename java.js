@@ -1,10 +1,10 @@
 function start(){
-  exe="False";
+  exe=1;
   wood=0;
   document.write('<link rel="stylesheet" href="style.css"><center><button onclick="game();">Игра</button><button onclick="invy();">Инветнарь</button><button onclick="create();">Рецепты</button><div id="windows"><img  onclick="add_wood();" src="img/Куст.png" width="100" height="100"></div></center>');
 }
 function add_wood(){
-  if(exe="True"){
+  if(exe=2){
     wood=wood+2;
   }
   else{
@@ -16,6 +16,7 @@ function game(){
 }
 function invy(){
   windows.innerHTML="Дерево:"+ wood;
+
     
 }
 function create(){
@@ -23,7 +24,7 @@ function create(){
 }
 function exe_add(){
   if(wood>=5){
-    exe="True";
+    exe=2;
     windows.innerHTML="Создано";
   }
   else{
