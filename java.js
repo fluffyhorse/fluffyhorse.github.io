@@ -16,7 +16,9 @@ function game(){
 }
 function invy(){
   windows.innerHTML="Дерево:"+ wood;
-
+  if(exe==2){
+    windows.innerHTML="Дерево:"+ wood+"<p>топор</p>";
+  }
     
 }
 function create(){
