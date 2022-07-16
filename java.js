@@ -4,7 +4,7 @@ function start(){
   document.write('<link rel="stylesheet" href="style.css"><center><button onclick="game();">Игра</button><button onclick="invy();">Инветнарь</button><button onclick="create();">Рецепты</button><div id="windows"><img  onclick="add_wood();" src="img/Куст.png" width="100" height="100"></div></center>');
 }
 function add_wood(){
-  if(exe=2){
+  if(exe==2){
     wood=wood+2;
   }
   else{
