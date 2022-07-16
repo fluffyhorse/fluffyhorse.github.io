@@ -25,6 +25,7 @@ function create(){
 function exe_add(){
   if(wood>=5){
     exe=2;
+    wood=wood-5;
     windows.innerHTML="Создано";
   }
   else{
