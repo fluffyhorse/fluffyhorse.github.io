@@ -39,7 +39,7 @@ function exe_add(){
   }
 }
 function exit_restoring(){
-  if(wood==100){
+  if(wood>=100){
     windows.innerHTML='<table><tr><td><img  onclick="add_wood();" src="img/Куст.png" width="100" height="100"></td><td><img  onclick="add_stone();" src="img/Камень.png" width="100" height="100"></td></tr><tr><td><img  onclick="exit();" src="img/Корабль.png" width="100" height="100"></td></tr></table>';
   }
   else{
