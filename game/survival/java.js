@@ -2,7 +2,7 @@ function start(){
   exe=1;
   wood=0;
   stone=0;
-  document.write('<link rel="stylesheet" href="style.css"><center><button onclick="game();">Игра</button><button onclick="invy();">Инветнарь</button><button onclick="create();">Рецепты</button><div id="windows"><table><tr><td><img  onclick="add_wood();" src="img/Куст.png" width="100" height="100"></td><td><img  onclick="add_stone();" src="img/Камень.png" width="100" height="100"></td></tr></div></center>');
+  document.write('<link rel="stylesheet" href="style.css"><center><button onclick="game();">Игра</button><button onclick="invy();">Инветнарь</button><button onclick="create();">Рецепты</button><div id="windows"><table><tr><td><img  onclick="add_wood();" src="img/Куст.png" width="100" height="100"></td><td><img  onclick="add_stone();" src="img/Камень.png" width="100" height="100"></td></tr><tr><td><img  onclick="exit_restoring();" src="img/Корабль сломан.png" width="100" height="100"></td></tr></table></div></center>');
 }
 function add_wood(){
   if(exe==2){
@@ -16,7 +16,7 @@ function add_stone(){
   stone=stone+1;
 }
 function game(){
-  windows.innerHTML='<table><tr><td><img  onclick="add_wood();" src="img/Куст.png" width="100" height="100"></td><td><img  onclick="add_stone();" src="img/Камень.png" width="100" height="100"></td></tr>';
+  windows.innerHTML='<table><tr><td><img  onclick="add_wood();" src="img/Куст.png" width="100" height="100"></td><td><img  onclick="add_stone();" src="img/Камень.png" width="100" height="100"></td></tr><tr><td><img  onclick="exit_restoring();" src="img/Корабль сломан.png" width="100" height="100"></td></tr></table>';
 }
 function invy(){
   windows.innerHTML="Дерево:"+ wood+"Камень"+stone;
@@ -37,5 +37,15 @@ function exe_add(){
   else{
     windows.innerHTML="Мало ингридиентов";
   }
-
+}
+function exit_restoring(){
+  if(wood==100){
+    windows.innerHTML='<table><tr><td><img  onclick="add_wood();" src="img/Куст.png" width="100" height="100"></td><td><img  onclick="add_stone();" src="img/Камень.png" width="100" height="100"></td></tr><tr><td><img  onclick="exit();" src="img/Корабль.png" width="100" height="100"></td></tr></table>';
+  }
+  else{
+    windows.innerHTML="Мало ингридиентов";
+  }
+}
+function exit(){
+  windows.innerHTML="<h2>Вы выжили!</h2><p>Достижение: Выживший</p>";
 }
