@@ -2,7 +2,7 @@ function start(){
   exe=1;
   wood=0;
   stone=0;
-  document.write('<link rel="stylesheet" href="style.css"><center><button onclick="game();">Игра</button><button onclick="invy();">Инветнарь</button><button onclick="create();">Рецепты</button><div id="windows"><table><tr><td><img  onclick="add_wood();" src="img/Куст.png" width="100" height="100"></td><td><img  onclick="add_stone();" src="img/Камень.png" width="100" height="100"></td></tr><tr><td><img  onclick="exit_restoring();" src="img/Корабль сломан.png" width="100" height="100"></td></tr></table></div></center>');
+  document.write('<head><script src="java.js"></script><link rel="stylesheet" href="style.css"><meta http-equiv="Content-Type" content="text/html; charset=utf-8">         <title>Выживание на острове</title><link rel="stylesheet" href="style.css"><center><button onclick="game();">Игра</button><button onclick="invy();">Инветнарь</button><button onclick="create();">Рецепты</button><div id="windows"><table><tr><td><img  onclick="add_wood();" src="img/Куст.png" width="100" height="100"></td><td><img  onclick="add_stone();" src="img/Камень.png" width="100" height="100"></td></tr><tr><td><img  onclick="exit_restoring();" src="img/Корабль сломан.png" width="100" height="100"></td></tr></table></div></center>');
 }
 function add_wood(){
   if(exe==2){
