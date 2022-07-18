@@ -1,3 +1,9 @@
 body{
   background-color: #85d979;
 }
+button{
+  background-color: #ffc966;
+  width: 150px;
+  height: 50px;
+  border-radius: 3px;
+}
